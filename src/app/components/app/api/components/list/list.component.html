@@ -1,0 +1,11 @@
+<div class="list-container" *ngIf="list">
+  <div class="entry" *ngFor="let entry of list.entries">
+    <div>{{entry['API']}}</div>
+    <div>{{entry['Description']}}</div>
+    <a target = "_blank" href="{{entry['Link']}}">docs</a>
+    <div class="footer">
+      <div>{{entry['Category']}}</div>
+      <div>{{entry['HTTPS']}}</div>
+    </div>
+  </div>
+</div>
